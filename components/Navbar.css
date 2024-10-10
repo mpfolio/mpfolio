@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    padding: 2.25rem 2rem;
+    gap: 3rem;
+}
+
+#logo {
+    height: 5rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+p { 
+    margin: 0;
+}
