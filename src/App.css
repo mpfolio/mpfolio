@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 4.75rem 6.25rem;
-    padding-top: 6.25rem;
     height: 80vh;
     gap: 2rem;
 }
@@ -20,6 +19,7 @@
     color: var(--background-light);
     gap: 2rem;
     height: 90vh;
+    width: 100vw;
     background: linear-gradient(248deg, #A5BAFF 19.93%, #C3ACFF 64.57%);
 }
 .section2 > * {
@@ -30,6 +30,8 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    width: 100vw;
+    box-sizing: border-box;
     padding: 8.75rem 6.25rem;
 }
 .section3 > .underline {
@@ -47,19 +49,26 @@
 .section3 > .card-container {
     display: flex;
     flex-direction: row;
-    gap: 6.25rem;
+    gap: 1.5rem;
+    width: 100%;
 }
 .card {
     display: flex;
     flex-direction: column;
+    flex: 1 1 0;
     padding: 2.25rem;
-    width: 25vw;
     gap: 1.25rem;
     border-radius: var(--Corner-None, 0rem) 3.125rem 3.6875rem 3.125rem;
     border: 1.5px solid #E5E0FF;
 }
+.section3 > .squiggle {
+    background-color: red;
+    height: 0.5rem;
+    width: 100%;
+}
 .section3 > #squiggle {
-    padding: 6.5rem 0;
+    width: 100%;
+    padding: 6rem 0;
 }
 .section3 > .bodytext {
     width: 30vw;

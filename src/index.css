@@ -3,18 +3,19 @@
 :root {
     --primary-color: #7139FF;
     --background-light: #FFFFFF;
+    /* font-size: 12px; */
 }
 
 body {
     margin: 0;
     display: flex;
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
     font-family: Outfit;
     background-color: var(--background-light)
 }
 
-* {
+*, *::before, *::after {
     font-family: inherit;
     box-sizing: border-box;
 }

@@ -18,9 +18,9 @@ function App() {
             {/* TODO: import dark filter blob from figma */}
             {/* TODO: the styles here are really inconsistent @sophie */}
             <h1 style={{ fontSize: "6rem" }}>Our Mission</h1>
-            <h1 style={{ fontWeight: 400 }}>
-                penis cock balls shak balls shft peniaAAAAAAAAAAAAAAs cock balls shaft penis cock balls sh balls shafshaft penis cock balls shaft penis cockt penis cock balls shaft penis cock balls shaft penis cock balls balls shaft
-            </h1>
+            <h2 style={{ fontWeight: 400 }}>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+            </h2>
         </div>
         <div className="section3">
             <h1 className="underline">Why us?</h1>
