@@ -1,4 +1,5 @@
 import './App.css'
+import hero_img from '../assets/hero_img.svg'
 import squiggle from '../assets/squiggle.svg'
 import Navbar from '../components/Navbar.jsx'
 import Button from '../components/Button.jsx'
@@ -13,6 +14,7 @@ function App() {
             <h3>
                 <Button text="Make an Account" variant="filled" />
             </h3>
+            <img id="hero_img" src={hero_img} alt="hero_img" />
         </div>
         <div className="section2">
             {/* TODO: import dark filter blob from figma */}
@@ -26,15 +28,16 @@ function App() {
             <h1 className="underline">Why us?</h1>
             <div className="card-container">
                 <div className="card">
-                    <h2>Developed by models for models</h2>
+                    <h2 style={{fontSize: "2.5rem"}}>Developed by models for models</h2>
                     <p>wow sophie is such a bad ta for showing up to her meeting 10 minutes late and forgetting that she evne had it she is so bad at being a responsible ta</p>
                 </div>
                 <div className="card">
-                    <h2>NYU Entrepreneurship Center</h2>
+                    {/* TODO: entrepreneurship is too long of a word */}
+                    <h2 style={{fontSize: "2.5rem"}}>NYU Entrepreneurship Center</h2>
                     <p>wow owo w fidosjafo fjiosdajfos if you dont have any right now you can always email me but yeah if not do you have any now if not yeah we had one about traffic?</p>
                 </div>
                 <div className="card">
-                    <h2>By Data Systems & Technology Professionals</h2>
+                    <h2 style={{fontSize: "2.5rem"}}>By Data Systems & Technology Professionals</h2>
                     <p>if you gys wanna come up with a new problem statement and email me you can otally do that i think that might be a smarter option as well because i think ortho k lenses are super specific so doing something broader woudl allow for more ideas for solutions</p>
                 </div>
             </div>

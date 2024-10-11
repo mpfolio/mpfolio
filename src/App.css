@@ -1,4 +1,5 @@
 .section1 {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +9,14 @@
 }
 .section1 > .bodytext {
     width: 45vw;
+}
+#hero_img {
+    position: absolute;
+    top: 50%;
+    right: 2vw;
+    width: 35vw;
+    z-index: -1;
+    transform: translateY(-50%);
 }
 
 .section2 {
@@ -47,8 +56,10 @@
     background-color: var(--primary-color);
 }
 .section3 > .card-container {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
     width: 100%;
 }
