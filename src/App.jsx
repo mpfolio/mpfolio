@@ -8,6 +8,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
+
 			<div className="section1">
 				<h1 className="headline">Networking for Models</h1>
 				<p className="bodytext">
