@@ -49,7 +49,7 @@ function App() {
 						{/* TODO: entrepreneurship is too long of a word */}
 						<h2 style={{ fontSize: "2.5rem" }}>NYU Entrepreneurship Center</h2>
 						<p>
-							NYU’s Entrepreneurship Center backs and works with My PocketFolio.
+							NYU's Entrepreneurship Center backs and works with My PocketFolio.
 							The founders dually participated in NYU’s Start-Up Bootcamp.
 						</p>
 					</div>
