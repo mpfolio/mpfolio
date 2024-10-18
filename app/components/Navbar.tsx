@@ -13,16 +13,16 @@ const Navbar = () => {
             <Link href="/">
                 <div className="logo-container">
                     <Image id="logo" src={logo} alt="logo" />
-                    <h2>PocketFolio</h2>
+                    <h3>PocketFolio</h3>
                 </div>
             </Link>
             <div className="spacer"></div>
-            <h3 className="comingSoonButton">
+            <p className="comingSoonButton">
                 <Button text={"Sign Up"} variant="transparent" href="/comingSoon" />
-            </h3>
-            <h3 className="comingSoonButton">
+            </p>
+            <p className="comingSoonButton">
                 <Button text={"Login"} variant="filled" href="/comingSoon" />
-            </h3>
+            </p>
         </div>
         </>
     );

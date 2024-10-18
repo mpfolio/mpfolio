@@ -36,17 +36,23 @@ h2 {
     margin: 0;
 }
 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 500;
     margin: 0;
 }
 h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+/* h5, h6 reserved for small body text */
+h5 {
     font-size: 1.25rem;
     font-weight: 400;
     margin: 0;
 }
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
 }

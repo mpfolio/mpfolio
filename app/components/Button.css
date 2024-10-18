@@ -1,6 +1,7 @@
 button {
     border: none; 
-    padding: 0.75rem 2.875rem;
+    padding: 0.75rem 2.875rem !important;
+        /* otherwise padding gets overrided by browser padding default 0 */
     border-radius: 999999rem;
     margin: 0; 
     box-shadow: none;

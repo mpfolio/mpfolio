@@ -79,8 +79,51 @@
 }
 .section3 > #squiggle {
     width: 100%;
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 .section3 > .bodytext {
     width: 30vw;
+}
+
+.section3 > .body-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.quad-container {
+    display: grid;
+    grid-template-rows: repeat(2, 16rem);
+    grid-template-columns: repeat(2, 16rem);
+}
+.quad-button  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    transition: filter 0.2s;
+}
+.quad-button:hover {
+    filter: brightness(1.1);
+}
+.quad-button > h5 {
+    min-height: 3.5rem;
+}
+.quad-button > .arrow {
+    width: 1.5rem;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    transition: height 0.2s, width 0.2s;
+}
+.quad1 {
+    border-radius: 3rem 0 0 0;
+}
+.quad2 {
+    border-radius: 0 3rem 0 0;
+}
+.quad3 {
+    border-radius: 0  0 0 3rem;
+}
+.quad4 {
+    border-radius: 0 0 3rem 0;
 }
