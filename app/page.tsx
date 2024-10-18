@@ -1,8 +1,9 @@
-import "./App.css";
-import hero_img from "../assets/hero_img.svg";
-import squiggle from "../assets/squiggle.svg";
-import Navbar from "../components/Navbar.jsx";
-import Button from "../components/Button.jsx";
+import Image from "next/image";
+import "./page.css";
+import hero_img from "./assets/hero_img.svg";
+import squiggle from "./assets/squiggle.svg";
+import Navbar from "./components/Navbar";
+import Button from "./components/Button";
 
 function App() {
 	return (
@@ -11,7 +12,7 @@ function App() {
 
 			<div className="section1">
 				<h1 className="headline">Networking for Models</h1>
-				<p className="bodytext">
+				<h3 className="bodytext">
 					My PocketFolio empowers models with personalized profiles showcasing
 					their portfolios and booking information, while giving agents
 					intuitive dashboards that offer insights into revenue, bookings, and
@@ -19,11 +20,12 @@ function App() {
 					digitize and centralize the casting and networking experience in the
 					modeling industry by providing a user-friendly discovery & networking
 					platform.
-				</p>
-				<h3>
-					<Button text="Make an Account" variant="filled" />
 				</h3>
-				<img id="hero_img" src={hero_img} alt="hero_img" />
+				{/* <h3>
+					<Button text="Make an Account" variant="filled" />
+				</h3> */}
+				{/* <img id="hero_img" src={hero_img} alt="hero_img" /> */}
+				<Image id="hero_img" src={hero_img} alt="hero_img" />
 			</div>
 			<div className="section2">
 				{/* TODO: import dark filter blob from figma */}
@@ -35,7 +37,7 @@ function App() {
 				</h2>
 			</div>
 			<div className="section3">
-				<h1 className="underline">Why us?</h1>
+				<h1 className="underlined">Why us?</h1>
 				<div className="card-container">
 					<div className="card">
 						<h2 style={{ fontSize: "2.5rem" }}>
@@ -65,7 +67,7 @@ function App() {
 						</p>
 					</div>
 				</div>
-				<img id="squiggle" src={squiggle} alt="squiggle" />
+				<Image id="squiggle" src={squiggle} alt="squiggle" />
 				<h1>Get to know us.</h1>
 				<p className="bodytext">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -74,7 +76,7 @@ function App() {
 					aliquip ex ea commodo consequat.{" "}
 				</p>
 				<p>
-					<Button text="Make an Account" variant="outlined" />
+					{/* <Button text="Make an Account" variant="outlined"/> */}
 				</p>
 			</div>
 		</>

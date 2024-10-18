@@ -2,13 +2,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 4.75rem 6.25rem;
-    height: 80vh;
+    /* justify-content: center; */
+    padding: 2.75rem 6.25rem;
+    min-height: 75vh;
     gap: 2rem;
 }
 .section1 > .bodytext {
-    width: 45vw;
+    width: 50vw;
 }
 #hero_img {
     position: absolute;
@@ -43,13 +43,13 @@
     box-sizing: border-box;
     padding: 8.75rem 6.25rem;
 }
-.section3 > .underline {
+.section3 > .underlined {
     position: relative;
 }
-.section3 > .underline::after {
+.section3 > .underlined::after {
     content: "";
     position: absolute;
-    bottom: 0.375rem;
+    bottom: 1rem;
     left: 0;
     height: 0.375rem;
     width: 20rem;

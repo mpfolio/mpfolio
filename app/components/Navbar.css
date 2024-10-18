@@ -10,6 +10,7 @@
 
 #logo {
     height: 5rem;
+    width: auto;
 }
 
 .logo-container {
@@ -21,8 +22,4 @@
 
 .spacer {
     flex: 1;
-}
-
-p { 
-    margin: 0;
 }
