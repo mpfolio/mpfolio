@@ -6,6 +6,7 @@ import "./page.css";
 import hero_img from "./assets/hero_img.svg";
 import squiggle from "./assets/squiggle.svg";
 import arrow from "./assets/arrow.svg";
+import nyu_logo from "./assets/nyu_logo.png";
 import Navbar from "./components/Navbar";
 import Button from "./components/Button";
 
@@ -36,8 +37,7 @@ function App() {
 				{/* TODO: the styles here are really inconsistent @sophie */}
 				<h1 className="underline">Our Mission</h1>
 				<h2 style={{ fontWeight: 400 }}>
-					We're here to revolutionize the modeling industry by providing a
-					data-driven platform that connects models and agents.
+                    Our mission is to revolutionize the modeling industry by providing a data-driven platform that connects models and agents.
 				</h2>
 			</div>
 			<div className="section3">
@@ -46,13 +46,18 @@ function App() {
 					<div className="card">
 						<h3>Developed by models for models</h3>
 						<p>
-							Founder of My Pocketfolio, Nyala Tolfree is a professional model
+							Founder of My PocketFolio, Nyala Tolfree is a professional model
 							who strives to help and uplift fellow models like you.
 						</p>
 					</div>
 					<div className="card">
 						{/* TODO: entrepreneurship is too long of a word */}
-						<h3>NYU Entrepreneurship Center</h3>
+                        <div className="title-nyu-logo">
+                            <h3>
+                                NYU Entrepreneurship Center
+                            </h3>
+                            <Image id="nyu-logo" src={nyu_logo} alt="nyu_logo" />
+                        </div>
 						<p>
 							NYU's Entrepreneurship Center backs and works with My PocketFolio.
 							The founders dually participated in NYU's Start-Up Bootcamp.
@@ -63,7 +68,7 @@ function App() {
 							By Data Systems & Technology Professionals
 						</h3>
 						<p>
-							We value your data and information, that is why My Pocketfolio is
+							We value your data and information, that is why My PocketFolio is
 							built and designed by information system specialists and
 							technology experts.
 						</p>
@@ -72,9 +77,14 @@ function App() {
 				<Image id="squiggle" src={squiggle} alt="squiggle" />
 				<h1>Get to know us.</h1>
                 <div className="body-container">
-                    <p className="bodytext">
-                        Our company offers a unique platform and exponentially lower costs than the majority of resource suppliers that create portfolio websites and comp-cards for professionals.
-                    </p>
+                    <div className="body-text">
+                        <p>
+                            Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others.
+                        </p>
+                        <h4>
+                            <Button text="Make an account" variant="outlined" href="/comingSoon"/>
+                        </h4>
+                    </div>
 
                     <div className="quad-container" onMouseLeave={() => setQuadHover(-1)}>
                         <div className="quad-button quad1" style={{
@@ -87,7 +97,7 @@ function App() {
                                 }}
                             />
                             <h3><strong>Explore</strong></h3>
-                            <h5>Demo My Pocketfolio</h5>
+                            <h5>Demo My PocketFolio</h5>
                         </div>
                         <div className="quad-button quad2" style={{
                             backgroundColor: "#DECAF1",
@@ -99,8 +109,8 @@ function App() {
                                 }}
                             />
                             <div className="spacer"></div>
-                            <h3><strong>About</strong></h3>
-                            <h5>Our solution to modeling cards.</h5>
+                            <h3><strong>Learn</strong></h3>
+                            <h5>Why My PocketFolio?</h5>
                         </div>
                         <div className="quad-button quad3" style={{
                             backgroundColor: "#A5BAFF",
@@ -113,7 +123,7 @@ function App() {
                             />
                             <div className="spacer"></div>
                             <h3><strong>Connect</strong></h3>
-                            <h5>Meet the My Pocketfolio team</h5>
+                            <h5>Meet the My PocketFolio team</h5>
                         </div>
                         <div className="quad-button quad4" style={{
                             backgroundColor: "#7139FF",
