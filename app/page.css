@@ -45,6 +45,7 @@
 }
 .section3 > .underlined {
     position: relative;
+    width: fit-content;
 }
 .section3 > .underlined::after {
     content: "";
@@ -53,7 +54,7 @@
     bottom: 1rem;
     left: 0;
     height: 0.375rem;
-    width: 20rem;
+    width: 100%;
     background-color: var(--primary-color);
 }
 .section3 > .card-container {
@@ -77,15 +78,22 @@
     color: var(--primary-color);
 }
 .card > .title-nyu-logo {
+    /* display: flex;
+    flex-direction: row; */
     display: inline-block;
 }
-.card > .title-nyu-logo > * {
+.card > .title-nyu-logo > h3 {
     display: inline;
+    /* width: 8rem;
+    flex: 1 1 0;
+    text-wrap: pretty;
+    word-wrap: break-word; */
 }
 .card > .title-nyu-logo > #nyu-logo {
-    width: 2rem;
-    height: auto;
-    margin-left: 0.5rem;
+    display: inline;
+    width: auto;
+    max-height: 2rem;
+    margin-right: 0.5rem;
     margin-top: 0.5rem;
     vertical-align: top;
 }

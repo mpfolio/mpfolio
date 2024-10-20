@@ -37,7 +37,7 @@ function App() {
 				{/* TODO: the styles here are really inconsistent @sophie */}
 				<h1 className="underline">Our Mission</h1>
 				<h2 style={{ fontWeight: 400 }}>
-                    Our mission is to revolutionize the modeling industry by providing a data-driven platform that connects models and agents.
+                    "Our mission is to revolutionize the modeling industry by providing a data-driven platform that connects models and agents."
 				</h2>
 			</div>
 			<div className="section3">
@@ -53,10 +53,10 @@ function App() {
 					<div className="card">
 						{/* TODO: entrepreneurship is too long of a word */}
                         <div className="title-nyu-logo">
+                            <Image id="nyu-logo" src={nyu_logo} alt="nyu_logo" />
                             <h3>
                                 NYU Entrepreneurship Center
                             </h3>
-                            <Image id="nyu-logo" src={nyu_logo} alt="nyu_logo" />
                         </div>
 						<p>
 							NYU's Entrepreneurship Center backs and works with My PocketFolio.
