@@ -79,7 +79,7 @@ function App() {
                 <div className="body-container">
                     <div className="body-text">
                         <p>
-                            Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others.
+                            "Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others."
                         </p>
                         <h4>
                             <Button text="Make an account" variant="outlined" href="/comingSoon"/>
