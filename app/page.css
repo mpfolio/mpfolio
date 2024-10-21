@@ -120,10 +120,13 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 2rem;
+    height: 100%;
+    width: 100%;
     transition: filter 0.2s;
 }
 .quad-button:hover {
     filter: brightness(1.1);
+    cursor: pointer;
 }
 .quad-button > h5 {
     min-height: 3.5rem;

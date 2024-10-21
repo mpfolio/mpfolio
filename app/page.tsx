@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from "next/image";
-import "./page.css";
+import "@/app/page.css";
 import hero_img from "./assets/hero_img.svg";
 import squiggle from "./assets/squiggle.svg";
 import arrow from "./assets/arrow.svg";
@@ -114,19 +114,23 @@ function App() {
                             <h3><strong>Learn</strong></h3>
                             <h5>Why My PocketFolio?</h5>
                         </div>
-                        <div className="quad-button quad3" style={{
-                            backgroundColor: "#A5BAFF",
-                            color: "#7139FF"
-                        }} onMouseEnter={() => setQuadHover(3)}>
-                            <Image className="arrow" src={arrow} alt="arrow" 
-                                style={{
-                                    width: (quadHover == 3 ? "2.5rem" : "1.5rem")
-                                }}
-                            />
-                            <div className="spacer"></div>
-                            <h3><strong>Connect</strong></h3>
-                            <h5>Meet the My PocketFolio team</h5>
-                        </div>
+
+                        <Link href="/about">
+                            <div className="quad-button quad3" style={{
+                                backgroundColor: "#A5BAFF",
+                                color: "#7139FF"
+                            }} onMouseEnter={() => setQuadHover(3)}>
+                                <Image className="arrow" src={arrow} alt="arrow" 
+                                    style={{
+                                        width: (quadHover == 3 ? "2.5rem" : "1.5rem")
+                                    }}
+                                />
+                                <div className="spacer"></div>
+                                <h3><strong>Connect</strong></h3>
+                                <h5>Meet the My PocketFolio team</h5>
+                            </div>
+                        </Link>
+
                         <div className="quad-button quad4" style={{
                             backgroundColor: "#7139FF",
                             color: "white"
