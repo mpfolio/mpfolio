@@ -8,7 +8,7 @@ import squiggle from "./assets/squiggle.svg";
 import arrow from "./assets/arrow.svg";
 import nyu_logo from "./assets/nyu_logo.png";
 import Navbar from "./components/Navbar";
-import Button from "./components/Button";
+import Link from 'next/link';
 
 function App() {
     const [quadHover, setQuadHover] = useState(0);
@@ -82,7 +82,9 @@ function App() {
                             "Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others."
                         </p>
                         <h4>
-                            <Button text="Make an account" variant="outlined" href="/comingSoon"/>
+                            <Link href="/comingSoon">
+                                <button className="outlined large">Make an account</button>
+                            </Link>
                         </h4>
                     </div>
 

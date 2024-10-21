@@ -6,6 +6,7 @@
 
 :root {
     --primary-color: #7139FF;
+    --primary-light: #E5E0FF;
     --background-light: #FFFFFF;
     /* font-size: 12px; */
 }
@@ -56,4 +57,54 @@ p {
     font-weight: 400;
     line-height: 2rem;
     margin: 0;
+}
+.color-primary {
+    color: var(--primary-color);
+}
+
+.spacer {
+    flex: 1;
+}
+
+/* BUTTON STYLES */
+button {
+    border: none; 
+    padding: 0.35rem 1.5rem !important;
+        /* otherwise padding gets overrided by browser padding default 0 */
+    border-radius: 999999rem;
+    margin: 0; 
+    box-shadow: none;
+    outline: none;
+    font-size: inherit;
+}
+
+button:hover {
+    /* TEMPORARY EFFECT */
+    filter: brightness(1.25);
+    cursor: pointer;
+}
+
+button.square {
+    border-radius: 0.25rem;
+}
+button.large {
+    padding: 0.75rem 2.875rem !important;
+}
+
+button.filled {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+}
+
+button.outlined {
+    background-color: transparent;
+    border: 0.125rem solid var(--primary-light);
+    color: var(--primary-color);
+}
+button.outlined.large {
+    border: 0.25rem solid var(--primary-color);
+}
+
+button.transparent {
+    background-color: transparent;
 }

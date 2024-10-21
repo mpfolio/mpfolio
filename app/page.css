@@ -78,16 +78,10 @@
     color: var(--primary-color);
 }
 .card > .title-nyu-logo {
-    /* display: flex;
-    flex-direction: row; */
     display: inline-block;
 }
 .card > .title-nyu-logo > h3 {
     display: inline;
-    /* width: 8rem;
-    flex: 1 1 0;
-    text-wrap: pretty;
-    word-wrap: break-word; */
 }
 .card > .title-nyu-logo > #nyu-logo {
     display: inline;

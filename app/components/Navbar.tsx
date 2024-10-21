@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import './Navbar.css'
 import logo from '@/app/assets/logo.svg'
-import Button from '@/app/components/Button'
 
 const Navbar = () => {
     return (
@@ -18,10 +17,14 @@ const Navbar = () => {
             </Link>
             <div className="spacer"></div>
             <p className="comingSoonButton">
-                <Button text={"Sign Up"} variant="transparent" href="/comingSoon" />
+                <Link href="/comingSoon">
+                    <button className="transparent large">Sign up</button>
+                </Link>
             </p>
             <p className="comingSoonButton">
-                <Button text={"Login"} variant="filled" href="/comingSoon" />
+                <Link href="/comingSoon">
+                    <button className="filled large">Log in</button>
+                </Link>
             </p>
         </div>
         </>

@@ -1,0 +1,106 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 4rem;
+    width: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    height: 18rem;
+    width: 100%;
+}
+.pfp {
+    aspect-ratio : 1 / 1;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 35%;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header-name {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.header-content > .spacer {
+    flex: 1;
+}
+.header-buttons {
+    margin-top: 0.125rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.67rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border: 0.125rem solid var(--primary-light);
+    border-radius: 0.25rem;
+    padding: 1.75rem 4rem;
+    gap: 1rem;
+}
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.about {
+    padding: 1.75rem 5.25rem;
+}
+
+.sections-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    width: 100%;
+}
+.sections-row > * {
+    flex: 1;
+}
+.msmt > .units-toggle {
+    margin-left: auto;
+    padding: 1rem 0;
+}
+.msmt-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.msmt-grid-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msmt-grid-cell > h5 {
+    background-color: var(--primary-light);
+    padding: 0.5rem 1.5rem;
+    min-width: 100%;
+    text-align: center;
+    border-radius: 9999999rem;
+}
+
+.exp-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 12rem;
+    border: 0.125rem solid var(--primary-light);
+}
+.exp-img {
+    padding: 1rem;
+    aspect-ratio : 1 / 1;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
