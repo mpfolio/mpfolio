@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import "@/app/team/page.css";
 import brandon_img from "@/app/assets/team/Brandon_Headshot.png"
-import erika_img from "@/app/assets/team/Erika_Headshot.jpg"
+import erika_img from "@/app/assets/team/Erika_Headshot.jpeg"
 import nyala_img from "@/app/assets/team/Nyala_Headshot.jpeg"
 import rowan_img from "@/app/assets/team/Rowan_Headshot.jpg"
 import sophie_img from "@/app/assets/team/Sophie_Headshot.jpg"
