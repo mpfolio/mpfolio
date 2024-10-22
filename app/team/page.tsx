@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import "@/app/team/page.css";
-import brandon_img from "@/app/assets/about/Brandon_Headshot.png"
-import erika_img from "@/app/assets/about/Erika_Headshot.jpg"
-import nyala_img from "@/app/assets/about/Nyala_Headshot.jpeg"
-import rowan_img from "@/app/assets/about/Rowan_Headshot.jpg"
-import sophie_img from "@/app/assets/about/Sophie_Headshot.jpg"
+import brandon_img from "@/app/assets/team/Brandon_Headshot.png"
+import erika_img from "@/app/assets/team/Erika_Headshot.jpg"
+import nyala_img from "@/app/assets/team/Nyala_Headshot.jpeg"
+import rowan_img from "@/app/assets/team/Rowan_Headshot.jpg"
+import sophie_img from "@/app/assets/team/Sophie_Headshot.jpg"
 
 type CardProps = {
     dir?: "left" | "right"; // position of img
