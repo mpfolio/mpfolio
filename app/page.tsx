@@ -115,7 +115,7 @@ function App() {
                             <h5>Why My PocketFolio?</h5>
                         </div>
 
-                        <Link href="/about">
+                        <Link href="/team">
                             <div className="quad-button quad3" style={{
                                 backgroundColor: "#A5BAFF",
                                 color: "#7139FF"

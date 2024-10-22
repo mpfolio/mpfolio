@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import "@/app/about/page.css";
+import "@/app/team/page.css";
 import brandon_img from "@/app/assets/about/Brandon_Headshot.png"
 import erika_img from "@/app/assets/about/Erika_Headshot.jpg"
 import nyala_img from "@/app/assets/about/Nyala_Headshot.jpeg"
