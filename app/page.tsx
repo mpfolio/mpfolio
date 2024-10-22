@@ -111,7 +111,7 @@ function App() {
                                 }}
                             />
                             <div className="spacer"></div>
-                            <h3><strong>Learn</strong></h3>
+                            <h3><strong>About</strong></h3>
                             <h5>Why My PocketFolio?</h5>
                         </div>
 
