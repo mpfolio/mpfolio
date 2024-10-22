@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import "@/app/page.module.css";
+import "@/app/page.css";
 import hero_img from "@/app/assets/hero_img.svg";
 import Navbar from "@/app/components/Navbar";
 

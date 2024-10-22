@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./page.module.css";
+import "./page.css";
 import head from "@/app/assets/profile_test/head.jpg";
 
 function App() {
