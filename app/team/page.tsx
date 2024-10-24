@@ -43,14 +43,14 @@ function App() {
                <Card 
                 dir="center"
                 name="Nyala Tolfree"
-                title="CEO"
+                title="Co-Founder and CEO"
                 img={nyala_img}
                 body="Nyala is an Undergraduate student at NYU studying Business and Technology Management. The idea of My Pocket Portfolio stemmed from her fashion model experience in New York City where she has been featured in magazines such as Harpers' Bazaar. As an Engineer and a person working in the technology industry it is glaring how archaic the arts & entertainment industry can be. Along with her team and entertainment colleagues,she has developed MPF to bring this industry into the technological era the world is in today."
             />
             <Card 
                 dir="center"
                 name="Erika Grossman"
-                title="Chief of Front End Development"
+                title="Co-Founder and CTO"
                 img={erika_img}
                 body="Erika is an Undergraduate student at NYU's Tandon School of Engineering. She is studying a major in Integrated Design and Media, and a minor in Business of Entertainment, Media, and Technology. She is experienced in graphic and front end website engineering. Specializing in front end design and development, Erika works on all of the visual aspects and visual coding segments of the website you are looking at today."
             />
