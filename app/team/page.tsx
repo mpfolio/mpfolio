@@ -25,7 +25,7 @@ const Card = ({ dir="left", name, title, img, body } : CardProps) => {
                 <h2 className="name color-primary" style={{ textAlign: dir }}>
                     { name }
                 </h2>
-                <h3 className="title" style={{ textAlign: dir }}>CEO</h3>
+                <h3 className="title" style={{ textAlign: dir }}>{title}</h3>
                 <p style={{ textAlign: dir }}>
                     { body }
                 </p>
