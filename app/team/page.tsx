@@ -39,7 +39,8 @@ function App() {
         <>
         <h1 className="main-title">Our Team</h1>
         <div className="card-container">
-            <Card 
+           
+               <Card 
                 dir="left"
                 name="Nyala Tolfree"
                 title="CEO"
@@ -53,6 +54,7 @@ function App() {
                 img={erika_img}
                 body="Erika is an Undergraduate student at NYU's Tandon School of Engineering. She is studying a major in Integrated Design and Media, and a minor in Business of Entertainment, Media, and Technology. She is experienced in graphic and front end website engineering. Specializing in front end design and development, Erika works on all of the visual aspects and visual coding segments of the website you are looking at today."
             />
+     
             <Card 
                 dir="left"
                 name="Rowan Tolfree"
@@ -63,7 +65,7 @@ function App() {
             <Card 
                 dir="right"
                 name="Sophia Manalo"
-                title="Chief of Front End Development"
+                title="Creative Director"
                 img={sophie_img}
                 body="Sophia is an Undergraduate student at NYU studying Integrated Design and Media. She has a background in graphic design, print design, and UX/UI, and is experienced  with softwares in the Adobe suite."
                 />
