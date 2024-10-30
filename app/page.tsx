@@ -115,7 +115,7 @@ function App() {
                             <h5>Why My PocketFolio?</h5>
                         </div>
 
-                        <Link href="/team">
+                        {/* <Link href="/team"> */}
                             <div className="quad-button quad3" style={{
                                 backgroundColor: "#A5BAFF",
                                 color: "#7139FF"
@@ -129,7 +129,7 @@ function App() {
                                 <h3><strong>Connect</strong></h3>
                                 <h5>Meet the My PocketFolio team</h5>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
                         <div className="quad-button quad4" style={{
                             backgroundColor: "#7139FF",
