@@ -9,9 +9,15 @@
     gap: 4rem;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .about-card {
     position: relative;
     display: flex;
+    padding:2.5rem;
 }
 .card-img-container {
     position: absolute; 
@@ -28,6 +34,10 @@
 }
 .card-img-container.right {
     right: 0;
+}
+
+.card-img-container.center {
+    left: 50%;
 }
 .card-img {
     width: 100%;
