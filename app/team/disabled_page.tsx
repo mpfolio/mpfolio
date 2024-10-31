@@ -37,7 +37,7 @@ const Card = ({ dir="left", name, title, img, body } : CardProps) => {
 function App() {
     return (
         <>
-        <h1 className="main-title">stageOur Team</h1>
+        <h1 className="main-title">Our Team</h1>
         <div className="card-container">
            <div className="flex-row">
                <Card 
