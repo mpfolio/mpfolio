@@ -7,6 +7,7 @@
 :root {
     --primary-color: #7139FF;
     --primary-light: #E5E0FF;
+    --primary-lightest: #F8F7FF;
     --background-light: #FFFFFF;
     /* font-size: 12px; */
 }
