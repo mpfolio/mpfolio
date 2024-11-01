@@ -28,14 +28,14 @@ function App() {
                     <Image className="subsection-image" src={tap} alt="tap" />
                     <div className="subsection-text">
                         <h2>Tap Feature</h2>
-                        <p>Agencies and castings can also host events and keep track of attendees through the My Pocket Portfolio Tap feature. </p>
+                        <p>Agencies and castings can also host events and keep track of attendees through the My PocketFolio Tap feature. </p>
                     </div>
                 </div>
                 <div className="subsection">
                     <Image className="subsection-image" src={ladder} alt="ladder" />
                     <div className="subsection-text">
                         <h2>User Friendly</h2>
-                        <p>My Pocket PortFolio is aimed to be user friendly. People can add photos and information to their profile in an alike manner to Instagram and navigate pages with ease.</p>
+                        <p>My PocketFolio is aimed to be user friendly. People can add photos and information to their profile in an alike manner to Instagram and navigate pages with ease.</p>
                     </div>
                 </div>
             </div>
