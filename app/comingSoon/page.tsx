@@ -65,7 +65,7 @@ function App() {
                 We're hard at work building the future of networking for models! Keep an eye on this website for our launch.
             </p>
             <p className="bodytext">
-                Want email updates from us? Let us know below!
+                Interested in My Pocketfolio? Sign up for email updates below!
             </p>
             <div className="email-form-conatiner">
 

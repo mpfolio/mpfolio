@@ -49,6 +49,7 @@
     border-radius: 1rem;
     padding: 4rem;
     padding-top: 4rem;
+    height: 100%;
 }
 .card-body > h3, h4 {
     text-align: center;
