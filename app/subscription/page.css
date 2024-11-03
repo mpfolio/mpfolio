@@ -1,0 +1,114 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 3.5rem;
+    margin-bottom: 2rem;
+}
+.title {
+    width: 100%;
+    text-align: center;
+}
+.subscription-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 36rem;
+}
+.subscription-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.75rem 1.75rem;
+    border-radius: 3rem;
+    width: 30%;
+    height: 32rem;
+    background-color: var(--primary-light);
+    transition: height 0.2s, width 0.2s;
+    margin: 0 -0.5rem;
+}
+.subscription-card.focused {
+    /* width: 32.5%; */
+    height: 36rem;
+    z-index: 1;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.subscription-card:nth-of-type(1) {
+    background-color: var(--secondary-color);
+}
+.subscription-card:nth-of-type(2) {
+    background-color: var(--primary-medium);
+}
+.subscription-card:nth-of-type(3) {
+    background-color: var(--tertiary-color);
+}
+.subscription-card > * {
+    color: white;
+}
+.subscription-card > h1 {
+    color: var(--primary-color);
+    margin-bottom: -1rem;
+}
+.subscription-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: auto;
+}
+.subscription-card-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.subscription-card .button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+#squiggle {
+    margin: 1rem 0;
+}
+
+.compare-table {
+    position: relative;
+    display: grid;
+    grid-template-columns: 35% repeat(3, 1fr);
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.compare-table > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.compare-table > :nth-child(4n + 1) {
+    justify-content: flex-start;
+}
+.compare-table > .underlined-cell {
+    margin: 0 3rem;
+    border-bottom: 0.1rem solid var(--primary-color);
+}
+.compare-table h3 {
+    color: var(--primary-color);
+}
+.compare-table > .background {
+    position: absolute;
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    background-color: var(--primary-light);
+    margin-top: -2rem;
+    width: 100%;
+    height: calc(100% + 4rem);
+    border-radius: 1.5rem;
+    z-index: -1;
+}
+.compare-table > .vertical.background {
+    grid-row: 1 / -1;
+    grid-column: 2 / 2;
+    background-color: white;
+    box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: calc(100% + 3rem);
+    margin-left: 10%;
+}

@@ -6,7 +6,9 @@ import "@/app/page.css";
 import hero_img from "./assets/hero_img.svg";
 import squiggle from "./assets/squiggle.svg";
 import arrow from "./assets/arrow.svg";
-import nyu_logo from "./assets/nyu_logo.png";
+import whyus_1 from "@/app/assets/whyus_1.svg";
+import whyus_2 from "@/app/assets/whyus_2.svg";
+import whyus_3 from "@/app/assets/whyus_3.svg";
 import Navbar from "./components/Navbar";
 import Link from 'next/link';
 
@@ -44,6 +46,7 @@ function App() {
 				<h1 className="underlined">Why us?</h1>
 				<div className="card-container">
 					<div className="card">
+                        <Image src={whyus_1} alt="holding hands" />
 						<h3>Developed by models for models</h3>
 						<p>
 							Founder of My PocketFolio, Nyala Tolfree is a professional model
@@ -51,19 +54,17 @@ function App() {
 						</p>
 					</div>
 					<div className="card">
-						{/* TODO: entrepreneurship is too long of a word */}
-                        <div className="title-nyu-logo">
-                            <Image id="nyu-logo" src={nyu_logo} alt="nyu_logo" />
-                            <h3>
-                                NYU Entrepreneurship Center
-                            </h3>
-                        </div>
+                        <Image src={whyus_2} alt="nyu_logo" />
+                        <h3>
+                            NYU Entrepreneurship Center
+                        </h3>
 						<p>
 							NYU's Entrepreneurship Center backs and works with My PocketFolio.
 							The founders dually participated in NYU's Start-Up Bootcamp.
 						</p>
 					</div>
 					<div className="card">
+                        <Image src={whyus_3} alt="lock" />
 						<h3>
 							By Data Systems & Technology Professionals
 						</h3>
@@ -79,7 +80,7 @@ function App() {
                 <div className="body-container">
                     <div className="body-text">
                         <p>
-                            "Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others."
+                            Our company is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others.
                         </p>
                         <h4>
                             <Link href="/comingSoon">
@@ -101,6 +102,7 @@ function App() {
                             <h3><strong>Explore</strong></h3>
                             <h5>Demo My PocketFolio</h5>
                         </div>
+                        <Link href='/about'>
                         <div className="quad-button quad2" style={{
                             backgroundColor: "#DECAF1",
                             color: "#7139FF"
@@ -114,8 +116,8 @@ function App() {
                             <h3><strong>About</strong></h3>
                             <h5>Why My PocketFolio?</h5>
                         </div>
-
-                        {/* <Link href="/team"> */}
+                        </Link>
+                        <Link href="/team">
                             <div className="quad-button quad3" style={{
                                 backgroundColor: "#A5BAFF",
                                 color: "#7139FF"
@@ -129,7 +131,7 @@ function App() {
                                 <h3><strong>Connect</strong></h3>
                                 <h5>Meet the My PocketFolio team</h5>
                             </div>
-                        {/* </Link> */}
+                        </Link>
 
                         <div className="quad-button quad4" style={{
                             backgroundColor: "#7139FF",
