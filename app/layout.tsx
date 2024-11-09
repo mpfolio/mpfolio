@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
         <body
             className={`antialiased ${outfit.className}`}
         >
-            <Navbar />
+            <Navbar loggedIn={false} />
             {children}
             <Footer />
         </body>

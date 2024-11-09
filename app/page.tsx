@@ -90,10 +90,7 @@ function App() {
                     </div>
 
                     <div className="quad-container" onMouseLeave={() => setQuadHover(-1)}>
-                        <div className="quad-button quad1" style={{
-                            backgroundColor: "#7139FF",
-                            color: "white"
-                        }} onMouseEnter={() => setQuadHover(1)}>
+                        <div className="quad-button quad1" onMouseEnter={() => setQuadHover(1)}>
                             <Image className="arrow" src={arrow} alt="arrow" 
                                 style={{
                                     width: (quadHover == 1 ? "2.5rem" : "1.5rem")
@@ -103,10 +100,7 @@ function App() {
                             <h5>Demo My PocketFolio</h5>
                         </div>
                         <Link href='/about'>
-                        <div className="quad-button quad2" style={{
-                            backgroundColor: "#DECAF1",
-                            color: "#7139FF"
-                        }} onMouseEnter={() => setQuadHover(2)}>
+                        <div className="quad-button quad2" onMouseEnter={() => setQuadHover(2)}>
                             <Image className="arrow" src={arrow} alt="arrow" 
                                 style={{
                                     width: (quadHover == 2 ? "2.5rem" : "1.5rem")
@@ -118,10 +112,7 @@ function App() {
                         </div>
                         </Link>
                         <Link href="/team">
-                            <div className="quad-button quad3" style={{
-                                backgroundColor: "#A5BAFF",
-                                color: "#7139FF"
-                            }} onMouseEnter={() => setQuadHover(3)}>
+                            <div className="quad-button quad3" onMouseEnter={() => setQuadHover(3)}>
                                 <Image className="arrow" src={arrow} alt="arrow" 
                                     style={{
                                         width: (quadHover == 3 ? "2.5rem" : "1.5rem")
@@ -133,10 +124,7 @@ function App() {
                             </div>
                         </Link>
 
-                        <div className="quad-button quad4" style={{
-                            backgroundColor: "#7139FF",
-                            color: "white"
-                        }} onMouseEnter={() => setQuadHover(4)}>
+                        <div className="quad-button quad4" onMouseEnter={() => setQuadHover(4)}>
                             <Image className="arrow" src={arrow} alt="arrow" 
                                 style={{
                                     width: (quadHover == 4 ? "2.5rem" : "1.5rem")

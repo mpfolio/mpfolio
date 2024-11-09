@@ -85,7 +85,7 @@ function App() {
                         <p>
                             <button className="filled"
                                 style={{
-                                    backgroundColor: loading ? "var(--secondary-color)" : "var(--primary-color)"
+                                    backgroundColor: loading ? "var(--light-blue)" : "var(--neon-purple)"
                                 }}
                             >
                                 <input type="submit" value="Submit" disabled={loading}/>

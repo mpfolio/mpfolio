@@ -23,3 +23,10 @@
 .spacer {
     flex: 1;
 }
+
+.navbar_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
