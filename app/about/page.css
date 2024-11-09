@@ -13,7 +13,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 0.1rem solid var(--primary-light);
+    border: 0.1rem solid var(--light-purple);
     border-radius: 1rem;
     padding: 2.5rem 3.5rem;
 }
@@ -24,7 +24,7 @@
     transform: translateY(-50%);
     padding: 0.25rem 1.25rem;
     border-radius: 999999rem;
-    background-color: var(--primary-light);
+    background-color: var(--light-purple);
 }
 .section > h1 {
     margin-top: -0.75rem;
@@ -45,7 +45,7 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    background-color: var(--primary-lightest);
+    background-color: var(--grey-white);
     border-radius: 1rem;
     padding: 2rem;
 }
@@ -60,5 +60,5 @@
     padding: 2rem;
 }
 .subsection-text > h2 {
-    color: var(--primary-color);
+    color: var(--neon-purple);
 }

@@ -23,7 +23,7 @@
     border-radius: 3rem;
     width: 30%;
     height: 32rem;
-    background-color: var(--primary-light);
+    background-color: var(--light-purple);
     transition: height 0.2s, width 0.2s;
     margin: 0 -0.5rem;
 }
@@ -34,19 +34,19 @@
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 .subscription-card:nth-of-type(1) {
-    background-color: var(--secondary-color);
+    background-color: var(--light-blue);
 }
 .subscription-card:nth-of-type(2) {
-    background-color: var(--primary-medium);
+    background-color: var(--warm-purple);
 }
 .subscription-card:nth-of-type(3) {
-    background-color: var(--tertiary-color);
+    background-color: #ABA5FF;
 }
 .subscription-card > * {
     color: white;
 }
 .subscription-card > h1 {
-    color: var(--primary-color);
+    color: var(--neon-purple);
     margin-bottom: -1rem;
 }
 .subscription-card-list {
@@ -87,16 +87,16 @@
 }
 .compare-table > .underlined-cell {
     margin: 0 3rem;
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-bottom: 0.1rem solid var(--neon-purple);
 }
 .compare-table h3 {
-    color: var(--primary-color);
+    color: var(--neon-purple);
 }
 .compare-table > .background {
     position: absolute;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
-    background-color: var(--primary-light);
+    background-color: var(--light-purple);
     margin-top: -2rem;
     width: 100%;
     height: calc(100% + 4rem);
