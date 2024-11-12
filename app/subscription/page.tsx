@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import squiggle from "@/app/assets/squiggle.svg";
 import '@/app/subscription/page.css';
+import check from "@/app/assets/check.svg";
 
 type SubscriptionCardProps = {
     i: number;
@@ -89,7 +90,7 @@ function App() {
                     title="Regular"
                     price="Free"
                     subtitle="Free plan for all users."
-                    features={["feature 1", "feature 2", "feature 3"]}
+                    features={["Measurements", "Digital Display", "Experience"]}
                     focus={focus} setFocus={setFocus}
                 />
                 <SubscriptionCard 
@@ -97,7 +98,7 @@ function App() {
                     title="Premium"
                     price="$5/month"
                     subtitle="Ideal for all creators"
-                    features={["feature 1", "feature 2", "feature 3"]}
+                    features={["Comp Card", "Portfolio", "Model Card"]}
                     focus={focus} setFocus={setFocus}
                 />
                 <SubscriptionCard 
@@ -105,7 +106,7 @@ function App() {
                     title="Deluxe"
                     price="$10/month"
                     subtitle="Ideal for companies."
-                    features={["feature 1", "feature 2", "feature 3"]}
+                    features={["Admin View", "Host Castings", "Visualized Data"]}
                     focus={focus} setFocus={setFocus}
                 />
             </div>
@@ -125,7 +126,9 @@ function App() {
                             <h3>{ row[0] }</h3>
                             { row.slice(1).map((j) => {
                                 return j ? 
-                                    <p className={i != compare_table.length - 1 ? "underlined-cell" : ""}>true</p> 
+                                    <p className={i != compare_table.length - 1 ? "underlined-cell" : ""}>
+                                        <Image className="check" src={check} alt="check" />
+                                    </p> 
                                 :   <p className={i != compare_table.length - 1 ? "underlined-cell" : ""}></p>
                             })}
                             </>

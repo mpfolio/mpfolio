@@ -111,4 +111,8 @@
     width: 80%;
     height: calc(100% + 3rem);
     margin-left: 10%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.compare-table .check {
+    width: 2rem;
 }

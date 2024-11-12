@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import "./page.css";
 import default_filler from "@/app/assets/profile/default_filler.svg";
+import emp_filler from "@/app/assets/profile/emp_filler.png";
 import { ExperienceType } from "@/app/types";
 
 const ExperienceItem = (exp: ExperienceType) => {
@@ -20,7 +21,7 @@ const ExperienceItem = (exp: ExperienceType) => {
 const EmploymentItem = (emp: ExperienceType) => {
     return (
         <div className="emp-item">
-            <Image className="emp-img" src={default_filler} alt="head" />
+            <Image className="emp-img" src={emp_filler} alt="head" />
             <div className="emp-body">
                 <h4>{ emp.title }</h4>
                 <h6>{ emp.body }</h6>

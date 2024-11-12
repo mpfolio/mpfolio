@@ -40,19 +40,19 @@ export default function App() {
 
     const employments: ExperienceType[] = [
         {
-            title: "Experience 1",
+            title: "Employment 1",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 2",
+            title: "Employment 2",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 3",
+            title: "Employment 3",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 4",
+            title: "Employment 4",
             body: "MM/YYYY"
         },
     ]
@@ -150,6 +150,7 @@ export default function App() {
             </div>
 
             <div className="section measurements">
+                <h6 className="units">METRIC/IMPERIAL</h6>
                 { Object.entries(measurements).map(([key, value]) => (
                     <div className="measurement">
                         <h5>
@@ -180,10 +181,18 @@ export default function App() {
                     <h3 className="color-primary">Employment and Skills</h3>
                     <div className="spacer"></div>
                     <h5>
+                        <button className="outlined square">Add new</button>
+                    </h5>
+                    <h5>
                         <button className="outlined square">Edit</button>
                     </h5>
                 </div>
-                <ItemList items={employments} type="emp" />
+                <div className="emp-skills-row">
+                    <div className="emp-container">
+                        <ItemList items={employments} type="emp" />
+                    </div>
+                    <div className="skills-filler"></div>
+                </div>
             </div>
             <div className="h-20"></div>
         </div>
