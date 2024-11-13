@@ -62,7 +62,6 @@ export default function App() {
     const measurements = {
         height: "5'5",
         hips: 34,
-        weight: 115,
         bust: 32,
         shoe: "8 US",
         dress: 2,
