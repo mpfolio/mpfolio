@@ -110,7 +110,6 @@ button.square {
 button.large {
     padding: 0.75rem 2.875rem !important;
 }
-
 button.filled {
     background-color: var(--neon-purple);
     color: white;

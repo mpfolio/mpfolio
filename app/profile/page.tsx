@@ -16,7 +16,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-  
 
 export default function App() {
     const experiences: ExperienceType[] = [
@@ -40,29 +39,28 @@ export default function App() {
 
     const employments: ExperienceType[] = [
         {
-            title: "Experience 1",
+            title: "Employment 1",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 2",
+            title: "Employment 2",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 3",
+            title: "Employment 3",
             body: "MM/YYYY"
         },
         {
-            title: "Experience 4",
+            title: "Employment 4",
             body: "MM/YYYY"
         },
     ]
 
-    const photos = [photo1, photo2, photo3, photo1, photo1]
+    const photos = [photo1, photo2, photo3, photo2]
 
     const measurements = {
         height: "5'5",
         hips: 34,
-        weight: 115,
         bust: 32,
         shoe: "8 US",
         dress: 2,
@@ -135,7 +133,13 @@ export default function App() {
                     </h5>
                 </div>
 
-                <Carousel>
+                
+                <Carousel
+                    opts={{ 
+                        loop: true
+                    }}
+                    className="carousel"
+                >
                     <CarouselContent>
                         { photos.map((photo, i) => (
                             <CarouselItem className="basis-1/3">
@@ -143,13 +147,15 @@ export default function App() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <div className="carousel-controls">
+                        <CarouselPrevious className="outlined" />
+                        <CarouselNext className="outlined" />
+                    </div>
                 </Carousel>
-
             </div>
 
             <div className="section measurements">
+                <h6 className="units">METRIC/IMPERIAL</h6>
                 { Object.entries(measurements).map(([key, value]) => (
                     <div className="measurement">
                         <h5>
@@ -180,10 +186,18 @@ export default function App() {
                     <h3 className="color-primary">Employment and Skills</h3>
                     <div className="spacer"></div>
                     <h5>
+                        <button className="outlined square">Add new</button>
+                    </h5>
+                    <h5>
                         <button className="outlined square">Edit</button>
                     </h5>
                 </div>
-                <ItemList items={employments} type="emp" />
+                <div className="emp-skills-row">
+                    <div className="emp-container">
+                        <ItemList items={employments} type="emp" />
+                    </div>
+                    <div className="skills-filler"></div>
+                </div>
             </div>
             <div className="h-20"></div>
         </div>

@@ -61,8 +61,32 @@
 .section.photos {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    padding-bottom: 4rem;
 }
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+.carousel-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.carousel-controls > button {
+    position: static !important;
+    transform: none !important;
+    width: 30%;
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+}
+.carousel-controls > button:hover {
+    background-color: var(--neon-purple);
+    color: white;
+}
+
 .measurements {
+    position: relative;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: -2.5rem;
@@ -83,12 +107,18 @@
 .measurement-value {
     color: var(--neon-purple);
 }
+.measurements .units {
+    position: absolute;
+    top: -2.5rem;
+    right: 1rem;
+    text-decoration: underline;
+}
 
 .items-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 0.25rem;
     overflow: hidden;
     background-color: var(--grey-white);
@@ -120,12 +150,14 @@
     gap: 0.5rem;
 }
 
+.emp-container {
+    flex: 1;
+}
 .emp-item {
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    width: 100%;
     min-height: 4rem;
     padding: 1rem;
     background-color: var(--grey-white);
@@ -139,6 +171,16 @@
 .emp-body {
     display: flex;
     flex-direction: column;
+}
+.emp-skills-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.skills-filler {
+    display: flex;
+    flex: 1;
+    background-color: var(--grey-white);
 }
 
 
@@ -154,4 +196,3 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
