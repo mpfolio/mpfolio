@@ -11,8 +11,9 @@ function App() {
             <h1 className="main-title">About</h1>
             <div className="section">
                 <h4 className="title-chip">Our Problem</h4>
+                <p>There are</p>
                 <h1 className="fill-gradient">1.78 million</h1>
-                <p>employed/signed models, apart from non-working signed models and freelance models. With that number not including a vast pool of those who are unemployed or aspiring. One of the biggest factors contributing to the success of those in the modeling industry is networking, yet there is no professional platform to do so on. Our company offers a unique platform and exponentially lower costs than the majority of resource suppliers that create portfolio websites and comp-cards for professionals.</p>
+                <p>employed/signed models, apart from non-working signed models and freelance models. That number does not including a vast pool of those who are unemployed or aspiring. One of the biggest factors contributing to the success of those in the modeling industry is networking, yet there is no professional platform to do so on. Our company offers a unique platform and exponentially lower costs than the majority of resource suppliers that create portfolio websites and comp-cards for professionals.</p>
             </div>
             <div className="section subsection-container">
                 <h4 className="title-chip">Solution</h4>
