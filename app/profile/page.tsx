@@ -16,7 +16,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-  
 
 export default function App() {
     const experiences: ExperienceType[] = [
@@ -57,7 +56,7 @@ export default function App() {
         },
     ]
 
-    const photos = [photo1, photo2, photo3, photo1, photo1]
+    const photos = [photo1, photo2, photo3, photo2]
 
     const measurements = {
         height: "5'5",
@@ -134,7 +133,13 @@ export default function App() {
                     </h5>
                 </div>
 
-                <Carousel>
+                
+                <Carousel
+                    opts={{ 
+                        loop: true
+                    }}
+                    className="carousel"
+                >
                     <CarouselContent>
                         { photos.map((photo, i) => (
                             <CarouselItem className="basis-1/3">
@@ -142,10 +147,11 @@ export default function App() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <div className="carousel-controls">
+                        <CarouselPrevious className="outlined" />
+                        <CarouselNext className="outlined" />
+                    </div>
                 </Carousel>
-
             </div>
 
             <div className="section measurements">

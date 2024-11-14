@@ -63,6 +63,28 @@
     border-bottom-left-radius: 0;
     padding-bottom: 4rem;
 }
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+.carousel-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.carousel-controls > button {
+    position: static !important;
+    transform: none !important;
+    width: 30%;
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+}
+.carousel-controls > button:hover {
+    background-color: var(--neon-purple);
+    color: white;
+}
+
 .measurements {
     position: relative;
     border-top-left-radius: 0;
