@@ -47,7 +47,7 @@ function App() {
 				<div className="card-container">
 					<div className="card">
                         <Image src={whyus_1} alt="holding hands" />
-						<h3>Developed by models for models</h3>
+						<h3>Developed by Models for Models</h3>
 						<p>
 							Founder of My PocketFolio, Nyala Tolfree is a professional model
 							who strives to help and uplift fellow models like you.
