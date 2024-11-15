@@ -70,9 +70,9 @@ function App() {
 
     const compare_table : (string | boolean)[][] = [
         ["Measurements", true, true, true],
-        ["Comp Card", false, true, true],
+        ["Comp Card Templates", false, true, true],
         ["Digital Display", true, true, true],
-        ["Experience", true, true, true],
+        ["Highlight Experiences", true, true, true],
         ["Admin View", false, false, true],
         ["Portfolio Site", false, true, true],
         ["Model Card", false, true, true],
@@ -90,7 +90,7 @@ function App() {
                     title="Regular"
                     price="Free"
                     subtitle="Free plan for all users."
-                    features={["Measurements", "Digital Display", "Experience"]}
+                    features={["Measurements", "Digital Display", "Highlight Experiences"]}
                     focus={focus} setFocus={setFocus}
                 />
                 <SubscriptionCard 
@@ -98,7 +98,7 @@ function App() {
                     title="Premium"
                     price="$5/month"
                     subtitle="Ideal for all creators"
-                    features={["Comp Card", "Portfolio", "Model Card"]}
+                    features={["Comp Card Templates", "Portfolio Site", "Model Card"]}
                     focus={focus} setFocus={setFocus}
                 />
                 <SubscriptionCard 
