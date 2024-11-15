@@ -70,13 +70,14 @@
 .carousel-controls {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 .carousel-controls > button {
     position: static !important;
     transform: none !important;
-    width: 30%;
+    width: 5%;
     border-color: var(--neon-purple);
     color: var(--neon-purple);
 }
