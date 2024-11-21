@@ -149,7 +149,7 @@ export default function App() {
                     <h3 className="color-primary">Photos and Measurements</h3>
                     <div className="spacer"></div>
                     <h5>
-                        <button className="outlined square">Edit</button>
+                        <button className="outlined square" onClick={() => setModal("measurement")}>Edit</button>
                     </h5>
                 </div>
 
