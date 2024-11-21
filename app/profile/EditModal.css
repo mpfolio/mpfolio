@@ -1,0 +1,72 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 1.5rem;
+    z-index: 101;
+    opacity: 100%;
+    min-width: 60vw;
+    padding: 4rem;
+    padding-bottom: 2rem;
+}
+.close {
+    position: absolute;
+    top: 1.75rem;
+    left: 1.75rem;
+    padding: 0 !important;
+    margin: 0;
+}
+.close img {
+    width: 1.5rem;
+}
+
+.modal-header {
+    color: var(--neon-purple);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.input-container :not(label) {
+    padding: 0.5rem;
+    border: 1px solid var(--light-purple);
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input.about {
+    height: 8rem;
+}

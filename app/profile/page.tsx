@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import "./page.css";
 import default_avatar from "@/app/assets/default_avatar.svg";
@@ -16,8 +18,13 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import EditModal from "./EditModal";
+import { useState } from "react";
 
 export default function App() {
+    type ModalValues = "profile" | "measurement" | "photos" | "experience" | "skills";
+    const [modal, setModal] = useState<ModalValues | null>(null);
+
     const experiences: ExperienceType[] = [
         {
             title: "Experience 1 | MM/YYYY",
@@ -90,7 +97,7 @@ export default function App() {
                     <div className="header-name">
                         <h2>Sophia Manalo</h2>
                         <h4>
-                            <button className="outlined">Edit</button>
+                            <button className="outlined" onClick={() => setModal("profile")}>Edit</button>
                         </h4>
                     </div>
                     <p>@sophialeano</p>
@@ -238,6 +245,7 @@ export default function App() {
                 </div>
             </div>
             <div className="h-20"></div>
+            { modal != null ? <EditModal type={modal} handleClose={() => {setModal(null)}}/> : <></>}
         </div>
     );
 }
