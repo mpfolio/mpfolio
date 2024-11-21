@@ -68,6 +68,19 @@ export default function App() {
         hair: "BROWN"
     }
 
+    const skills = [
+        "Commercial",
+        "Runway",
+        "Professionalism",
+        "Adaptability",
+        "Editorial",
+        "Confidence",
+        "Adaptable Appearance",
+        "Teamwork",
+        "Flexibility",
+        "Balance & Coordination"
+    ]
+
 
     return (
         <div className="profile">
@@ -181,22 +194,47 @@ export default function App() {
                 </div>
                 <ItemList items={experiences} type="exp" />
             </div>
-            <div className="section emp-skills">
-                <div className="section-header">
-                    <h3 className="color-primary">Employment and Skills</h3>
-                    <div className="spacer"></div>
-                    <h5>
-                        <button className="outlined square">Add new</button>
-                    </h5>
-                    <h5>
-                        <button className="outlined square">Edit</button>
-                    </h5>
-                </div>
-                <div className="emp-skills-row">
-                    <div className="emp-container">
-                        <ItemList items={employments} type="emp" />
+
+            <div className="sections-row">
+                <div className="section emp">
+                    <div className="section-header">
+                        <h3 className="color-primary">Employment</h3>
+                        <div className="spacer"></div>
+                        <h5>
+                            <button className="outlined square">Add new</button>
+                        </h5>
+                        <h5>
+                            <button className="outlined square">Edit</button>
+                        </h5>
                     </div>
-                    <div className="skills-filler"></div>
+                    <div className="emp-skills-row">
+                        <div className="emp-container">
+                            <ItemList items={employments} type="emp" />
+                        </div>
+                    </div>
+                </div>
+                <div className="section skills">
+                    <div className="section-header">
+                        <h3 className="color-primary">Skills</h3>
+                        <div className="spacer"></div>
+                        <h5>
+                            <button className="outlined square">Add new</button>
+                        </h5>
+                        <h5>
+                            <button className="outlined square">Edit</button>
+                        </h5>
+                    </div>
+                    <div className="emp-skills-row">
+                        <div className="skills-bubbles-container">
+                            { skills.map(s => {
+                                return (
+                                    <div className="skill-bubble">
+                                        <h4>{ s }</h4>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="h-20"></div>
