@@ -20,13 +20,7 @@ function App() {
 			<div className="section1">
 				<h1 className="headline">Networking for Models</h1>
 				<p className="bodytext">
-					My PocketFolio empowers models with personalized profiles showcasing
-					their portfolios and booking information, while giving agents
-					intuitive dashboards that offer insights into revenue, bookings, and
-					trends—creating a seamless experience that drives growth. We aim to
-					digitize and centralize the casting and networking experience in the
-					modeling industry by providing a user-friendly discovery & networking
-					platform.
+                    My PocketFolio is an emerging media social networking platform that provides professionals in the modeling industry with a place to showcase their portfolios, compcards, resumes, and professional experience while connecting with others.
 				</p>
 				{/* <h3>
 					<Button text="Make an Account" variant="filled" />
