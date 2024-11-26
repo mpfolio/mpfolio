@@ -17,6 +17,11 @@
     border-radius: 1rem;
     padding: 2.5rem 3.5rem;
 }
+.section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .title-chip {
     position: absolute;
     top: 0;
@@ -61,4 +66,29 @@
 }
 .subsection-text > h2 {
     color: var(--neon-purple);
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding: 0 1.5rem;
+    }
+    .section {
+        padding: 1.5rem 1.5rem;
+    }
+    .title-chip {
+        left: 1rem;
+    }
+    .section-text {
+        gap: 1rem;
+    }
+    .subsection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subsection-text {
+        padding: 0;
+    }
+    .subsection-image {
+        width: 75%;
+    }
 }

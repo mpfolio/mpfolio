@@ -196,7 +196,7 @@ export default function App() {
                         <button className="outlined square">Add new</button>
                     </h5>
                     <h5>
-                        <button className="outlined square">Edit</button>
+                        <button className="outlined square" onClick={() => setModal("experience")}>Edit</button>
                     </h5>
                 </div>
                 <ItemList items={experiences} type="exp" />

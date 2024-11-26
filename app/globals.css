@@ -63,7 +63,7 @@ p {
     margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -71,17 +71,17 @@ p {
         font-size: 1.5rem;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
     h4 {
         font-size: 0.75rem;
     }
     /* h5, h6 reserved for small body text */
     h5 {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 1.25rem;
         margin: 0;
     }
@@ -135,7 +135,7 @@ button.square {
     border-radius: 0.25rem;
 }
 button.large {
-    padding: 0.75rem 2.875rem !important;
+    padding: 0.75rem 2.875rem;
 }
 button.filled {
     background-color: var(--neon-purple);

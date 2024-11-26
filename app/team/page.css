@@ -61,3 +61,29 @@
 .temp-spacer {
     height: 6rem;
 }
+
+@media (max-width: 768px) {
+    .card-container {
+        margin: 0 2rem;
+        gap: 2rem;
+    }
+    .flex-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+    .about-card {
+        padding: 0;
+    }
+    .card-img-container {
+        max-height: 10rem;
+        max-width: 10rem;
+        border: 0.375rem solid var(--neon-purple);
+    }
+    .card-body {
+        padding: 1.5rem;
+        padding-top: 4rem;
+    }
+
+}

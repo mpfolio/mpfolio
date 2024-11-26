@@ -6,7 +6,7 @@ const ProfileModal = () => {
     return (
         <div className="profile-modal">
             <h3 className="modal-header">Edit Profile</h3>
-            <div className="input-grid-profile">
+            <div className="input-grid">
                 <div className="input-container">
                     <label>First Name</label>
                     <input type="text" placeholder="First Name"></input>
@@ -53,34 +53,51 @@ const MeasurementModal = () => {
                         <option value="nonbinary">Non-binary</option>
                     </select>
                 </div>
+                { 
+                    ["Age", "Waist", "Hair Color", "Eye Color", "Chest", "Inseam", "Suit", "Hips", "Bust", "Dress", "Shoe Size"]
+                    .map(label => {
+                        return (
+                            <div className="input-container">
+                                <label>{label}</label>
+                                <input type="text" placeholder={label}></input>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+    )
+}
+
+const ExperienceModal = () => {
+    return (
+        <div className="experience-modal">
+            <h3 className="modal-header">Add Experience</h3>
+            <div className="input-grid">
                 <div className="input-container">
-                    <label>Age</label>
-                    <input type="text" placeholder="Age"></input>
+                    <label>Company</label>
+                    <input type="text" placeholder="Company"></input>
                 </div>
                 <div className="input-container">
-                    <label>Waist</label>
-                    <input type="text" placeholder="Waist"></input>
+                    <label>Position</label>
+                    <input type="text" placeholder="Position"></input>
                 </div>
                 <div className="input-container">
-                    <label>Hair Color</label>
-                    <input type="text" placeholder="Hair Color"></input>
+                    <label>Start Date</label>
+                    <input type="date" placeholder="Start Date"></input>
                 </div>
                 <div className="input-container">
-                    <label>Chest</label>
-                    <input type="text" placeholder="Chest"></input>
+                    <label>End Date</label>
+                    <input type="date" placeholder="End Date"></input>
                 </div>
-                <div className="input-container">
-                    <label>Inseam</label>
-                    <input type="text" placeholder="Inseam"></input>
+                <div className="checkbox input-container">
+                    <input type="checkbox"></input>
+                    <label>I am still working here</label>
                 </div>
-                <div className="input-container">
-                    <label>Suit</label>
-                    <input type="text" placeholder="Suit"></input>
-                </div>
-                <div className="input-container">
-                    <label>Shoe Size</label>
-                    <input type="text" placeholder="Shoe Size"></input>
-                </div>
+            </div>
+            <div className="input-container">
+                <label>Description (200 words max)</label>
+                <textarea className="about" placeholder="About Me" rows={4}></textarea>
             </div>
         </div>
     )
@@ -102,7 +119,7 @@ function EditModal({type, handleClose} : EditModalProps) {
             { type == "profile" ? <ProfileModal />
             : type == "measurement" ? <MeasurementModal />
             // : type == "photos" ? <PhotosModal />
-            // : type == "experience" ? <ExperienceModal />
+            : type == "experience" ? <ExperienceModal />
             : <></>
             }
             <div className="button-row">
