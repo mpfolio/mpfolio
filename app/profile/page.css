@@ -48,6 +48,11 @@
     padding: 1.75rem 4rem;
     gap: 1rem;
 }
+.sections-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
 .section-header {
     display: flex;
     flex-direction: row;
@@ -151,6 +156,10 @@
     gap: 0.5rem;
 }
 
+.section.emp {
+    padding: 1.75rem 1.75rem;
+    flex: 1;
+}
 .emp-container {
     flex: 1;
 }
@@ -173,15 +182,38 @@
     display: flex;
     flex-direction: column;
 }
-.emp-skills-row {
+.emp-row {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.skills-filler {
-    display: flex;
+
+
+.section.skills {
+    padding: 1.75rem 1.75rem;
     flex: 1;
+}
+.skills-bubbles-container {
     background-color: var(--grey-white);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+.skill-bubble {
+    background: linear-gradient(135deg, #9AADF3, #7E7EFF); /* Gradient from #604FFF to #4090FF */
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 999999rem;
+    color: white;
+}
+.skill-bubble:not(:last-child) {
+    margin-right: 0.5rem;
+}
+.skill-bubble > h4 {
+    font-size: 1rem;
 }
 
 

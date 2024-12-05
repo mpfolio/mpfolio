@@ -20,24 +20,28 @@ const SubscriptionCard = ({ i, title, price, subtitle, features, focus, setFocus
             onMouseEnter={() => setFocus(i)}
             onMouseLeave={() => setFocus(1)}
         >
-            <h3>{ title }</h3>
-            {
-                price.includes("/") ? (
-                    <>
-                    <h1>
-                        {price.substring(0, price.indexOf("/"))}
-                        <span style={{
-                            fontSize: "2.5rem"
-                        }}>
-                            {price.substring(price.indexOf("/"))}
-                        </span>
-                    </h1>
-                    </>
-                ) : (
-                    <h1>{price}</h1>
-                )
-            }
-            <p>{ subtitle }</p>
+            <div className="subscription-card-header">
+                <h3>{ title }</h3>
+                {
+                    price.includes("/") ? (
+                        <>
+                        <h1>
+                            {price.substring(0, price.indexOf("/"))}
+                            <span style={{
+                                fontSize: "2.5rem"
+                            }}>
+                                {price.substring(price.indexOf("/"))}
+                            </span>
+                        </h1>
+                        </>
+                    ) : (
+                        <h1>{price}</h1>
+                    )
+                }
+                <p className="subtitle">
+                    { subtitle }
+                </p>
+            </div>
             <div className="subscription-card-list">
                 {
                     features.map(text => {
@@ -49,10 +53,11 @@ const SubscriptionCard = ({ i, title, price, subtitle, features, focus, setFocus
                         )
                     })
                 }
+                <div className="spacer"></div>
+                <p className="button-wrapper">
+                    <button className="filled">Get { title } Plan</button>
+                </p>
             </div>
-            <p className="button-wrapper">
-                <button className="filled">Get { title } Plan</button>
-            </p>
         </div>
     );
 }
@@ -70,9 +75,9 @@ function App() {
 
     const compare_table : (string | boolean)[][] = [
         ["Measurements", true, true, true],
-        ["Comp Card Templates", false, true, true],
+        ["Comp Card", false, true, true],
         ["Digital Display", true, true, true],
-        ["Highlight Experiences", true, true, true],
+        ["Experiences", true, true, true],
         ["Admin View", false, false, true],
         ["Portfolio Site", false, true, true],
         ["Model Card", false, true, true],
@@ -96,7 +101,7 @@ function App() {
                 <SubscriptionCard 
                     i={1}
                     title="Premium"
-                    price="$5/month"
+                    price="$5/mo"
                     subtitle="Ideal for all creators"
                     features={["Comp Card Templates", "Portfolio Site", "Model Card"]}
                     focus={focus} setFocus={setFocus}
@@ -104,7 +109,7 @@ function App() {
                 <SubscriptionCard 
                     i={2}
                     title="Deluxe"
-                    price="$10/month"
+                    price="$10/mo"
                     subtitle="Ideal for companies."
                     features={["Admin View", "Host Castings", "Visualized Data"]}
                     focus={focus} setFocus={setFocus}

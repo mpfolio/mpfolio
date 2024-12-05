@@ -40,6 +40,17 @@ function App() {
                     </div>
                 </div>
             </div>
+            <div className="section">
+                <h4 className="title-chip">Sustainability</h4>
+                <p>We aim to bring the modeling industry into the paperless age. By allowing models to display all information needed to get the best job for them, including professional digitals and headshots, all measurement information, and best professional experiences, printed paper comp cards will be left in the past. In a time that should be so desperately focused on how to better the planet, moving this industry into the age of technology is a huge step.</p>
+            </div>
+            <div className="section">
+                <h4 className="title-chip">NYU Impact</h4>
+                <div className="section-text">
+                    <p>My PocketFolio Founders are both currently a part of NYU's Entrepreneurial Exchange Group, and the CEO has gained the business a spot in their Entrepreneur in Residence program. These groups both have helped our business grow exponentially and given us resources we would not have been able to get without their partnership.</p>
+                    <p>My PocketFolio has also finished NYU's Startup Bootcamp and soon hopes to participate in their NYU Female Founders Fellowship, their Startup Sprint, and their Summer Launchpad.</p>
+                </div>
+            </div>
         </div>
         </>
     );

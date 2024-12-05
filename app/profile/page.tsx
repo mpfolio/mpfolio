@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import "./page.css";
 import default_avatar from "@/app/assets/default_avatar.svg";
@@ -16,8 +18,13 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import EditModal from "./EditModal";
+import { useState } from "react";
 
 export default function App() {
+    type ModalValues = "profile" | "measurement" | "photos" | "experience" | "skills";
+    const [modal, setModal] = useState<ModalValues | null>(null);
+
     const experiences: ExperienceType[] = [
         {
             title: "Experience 1 | MM/YYYY",
@@ -68,6 +75,19 @@ export default function App() {
         hair: "BROWN"
     }
 
+    const skills = [
+        "Commercial",
+        "Runway",
+        "Professionalism",
+        "Adaptability",
+        "Editorial",
+        "Confidence",
+        "Adaptable Appearance",
+        "Teamwork",
+        "Flexibility",
+        "Balance & Coordination"
+    ]
+
 
     return (
         <div className="profile">
@@ -77,7 +97,7 @@ export default function App() {
                     <div className="header-name">
                         <h2>Sophia Manalo</h2>
                         <h4>
-                            <button className="outlined">Edit</button>
+                            <button className="outlined" onClick={() => setModal("profile")}>Edit</button>
                         </h4>
                     </div>
                     <p>@sophialeano</p>
@@ -129,7 +149,7 @@ export default function App() {
                     <h3 className="color-primary">Photos and Measurements</h3>
                     <div className="spacer"></div>
                     <h5>
-                        <button className="outlined square">Edit</button>
+                        <button className="outlined square" onClick={() => setModal("measurement")}>Edit</button>
                     </h5>
                 </div>
 
@@ -176,30 +196,56 @@ export default function App() {
                         <button className="outlined square">Add new</button>
                     </h5>
                     <h5>
-                        <button className="outlined square">Edit</button>
+                        <button className="outlined square" onClick={() => setModal("experience")}>Edit</button>
                     </h5>
                 </div>
                 <ItemList items={experiences} type="exp" />
             </div>
-            <div className="section emp-skills">
-                <div className="section-header">
-                    <h3 className="color-primary">Employment and Skills</h3>
-                    <div className="spacer"></div>
-                    <h5>
-                        <button className="outlined square">Add new</button>
-                    </h5>
-                    <h5>
-                        <button className="outlined square">Edit</button>
-                    </h5>
-                </div>
-                <div className="emp-skills-row">
-                    <div className="emp-container">
-                        <ItemList items={employments} type="emp" />
+
+            <div className="sections-row">
+                <div className="section emp">
+                    <div className="section-header">
+                        <h3 className="color-primary">Employment</h3>
+                        <div className="spacer"></div>
+                        <h5>
+                            <button className="outlined square">Add new</button>
+                        </h5>
+                        <h5>
+                            <button className="outlined square">Edit</button>
+                        </h5>
                     </div>
-                    <div className="skills-filler"></div>
+                    <div className="emp-skills-row">
+                        <div className="emp-container">
+                            <ItemList items={employments} type="emp" />
+                        </div>
+                    </div>
+                </div>
+                <div className="section skills">
+                    <div className="section-header">
+                        <h3 className="color-primary">Skills</h3>
+                        <div className="spacer"></div>
+                        <h5>
+                            <button className="outlined square">Add new</button>
+                        </h5>
+                        <h5>
+                            <button className="outlined square">Edit</button>
+                        </h5>
+                    </div>
+                    <div className="emp-skills-row">
+                        <div className="skills-bubbles-container">
+                            { skills.map(s => {
+                                return (
+                                    <div className="skill-bubble">
+                                        <h4>{ s }</h4>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="h-20"></div>
+            { modal != null ? <EditModal type={modal} handleClose={() => {setModal(null)}}/> : <></>}
         </div>
     );
 }
