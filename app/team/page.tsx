@@ -61,7 +61,7 @@ function App() {
                     body="Erika is an Undergraduate student at NYU's Tandon School of Engineering. She is studying a major in Integrated Design and Media, and a minor in Business of Entertainment, Media, and Technology. She is experienced in graphic and front end website engineering. Specializing in front end design and development, Erika works on all of the visual aspects and visual coding segments of the website you are looking at today."
                 />
             </div>
-            <div className="flex-row">
+            {/* <div className="flex-row">
                 <Card 
                     name="Rowan Tolfree"
                     title="Back End Developer"
@@ -77,7 +77,7 @@ function App() {
                     title="Web Developer"
                     img={brandon_img}
                 />
-            </div>
+            </div> */}
         </div>
         <div className="temp-spacer"></div>
         </>
