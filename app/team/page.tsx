@@ -12,7 +12,8 @@ type CardIconProps = {
     img: StaticImageData;
     body?: string;
 }
-// TODO: update default image to filler image
+// TO DO: update default image to filler image
+
 const Card = ({ name, title, img, body } : CardIconProps) => {
 
     return (
