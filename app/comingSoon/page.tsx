@@ -18,7 +18,7 @@ function App() {
 
     
     const handleSubmit = async (e: any) => {
-        const googleScriptURL = "https://script.google.com/macros/s/AKfycbyeRWOfgXzJY1DysSZLLNxHLdBpeOssgF_dGiBWuCef9h5crV6JQtF9yGCD_B6o1xVdfQ/exec"
+        const googleScriptURL = "https://script.google.com/macros/s/AKfycbxik0JhXz7L_TGg2OFNlP7NRuCL-B5EhDVSBPzgtBQaSjo1jTtna3W11eqmzZZedDND/exec"
 
         e.preventDefault();
 
